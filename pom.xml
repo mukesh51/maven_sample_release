@@ -16,7 +16,7 @@
   </distributionManagement>
   <scm>
   	<connection>scm:git:git@github.com:mukesh51/maven_sample_release.git</connection>
-    <tag>HEAD</tag>
+    <tag>v@{project.version}</tag>
   </scm>
   <dependencies>
   	<dependency>
