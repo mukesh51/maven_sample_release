@@ -8,4 +8,7 @@ public class Demo {
 	                Demo.class.getPackage().getImplementationVersion());
 	 }
 	
+	 public String sayHello() {
+		 return "Hello";
+	 }
 }
