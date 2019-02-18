@@ -11,4 +11,8 @@ public class Demo {
 	 public String sayHello() {
 		 return "Hello World";
 	 }
+	 
+	 public int getYear() {
+		 return 2019;
+	 }
 }
