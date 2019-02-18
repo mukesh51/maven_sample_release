@@ -9,7 +9,7 @@ public class Demo {
 	 }
 	
 	 public String sayHello() {
-		 return "Hello World --";
+		 return "Good One";
 	 }
 	 
 	 public int getYear() {
