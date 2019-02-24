@@ -2,7 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mukesh51</groupId>
   <artifactId>mvn_sample_release</artifactId>
-  <version>0.0.6-SNAPSHOT</version>
+  <!-- >version>0.0.7</version -->
+  <version>${revision}</version>
+  
+  <properties>
+  	<revision>0-default</revision>
+  </properties>
   
   <distributionManagement>
   	<repository>
@@ -33,6 +38,13 @@
 		    <artifactId>maven-release-plugin</artifactId>
 		    <version>2.5.3</version>
   		</plugin>
+  		<plugin>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.9.4</version>
+                <configuration>
+                    <tag>${project.artifactId}-${project.version}</tag>
+                </configuration>
+            </plugin>
   	</plugins>
   </build>
 </project>
